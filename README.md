@@ -42,5 +42,3 @@
 ``` bash
 * npm test
 ```
-
-构建新项目时github提交测试
