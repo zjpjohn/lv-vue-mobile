@@ -1,28 +1,43 @@
-# 绿城购物项目vue-mobile版
+# 绿城购物vue-mobile版
 
-> 绿城购物项目
+> 绿城购物
 
-## Build Setup
+## 构建步骤
 
+# 安装依赖
 ``` bash
-# install dependencies
-npm install
+* npm install
+* cnpm install vux --save  //在项目中安装vux
+* cnpm install vux-loader --save-dev //在项目中安装vux-loader
+* cnpm install less less-loader --save-dev //安装less-loader
+```
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 服务热加载localhost:8080
+``` bash
+* npm run dev
+```
 
-# build for production with minification
-npm run build
+# 最小化产品构建
+``` bash
+* npm run build
+```
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# 为项目和视图构建模块分析报告
+``` bash
+* npm run build --report
+```
 
-# run unit tests
-npm run unit
+# 运行单元测试
+``` bash
+* npm run unit
+```
 
-# run e2e tests
-npm run e2e
+# 运行e2e测试
+``` bash
+* npm run e2e
+```
 
-# run all tests
-npm test
+# 运行所有的测试
+``` bash
+* npm test
 ```

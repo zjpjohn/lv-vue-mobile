@@ -9,7 +9,7 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-module.exports = {
+const originalConfig = {
   entry: {
     app: './src/main.js'
   },
