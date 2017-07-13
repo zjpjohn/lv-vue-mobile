@@ -10,6 +10,7 @@
 * cnpm install vux --save  //在项目中安装vux
 * cnpm install vux-loader --save-dev //在项目中安装vux-loader
 * cnpm install less less-loader --save-dev //安装less-loader
+* cnpm i mint-ui -S //安装eleme的UI库
 ```
 
 ## 服务热加载localhost:8080

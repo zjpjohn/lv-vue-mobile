@@ -6,11 +6,12 @@ import Login from '@/pages/login/login'
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'Login',
+      component: Login
     },
     {
       path: '/login', // 登录

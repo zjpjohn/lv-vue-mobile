@@ -1,0 +1,618 @@
+
+// Catchall baseclass
+@import "yw-variables";
+
+@font-face {
+  font-family: 'yw';
+  src:  url('@{icomoon-font-path}/yw.eot?ihsnxx');
+  src:  url('@{icomoon-font-path}/yw.eot?ihsnxx#iefix') format('embedded-opentype'),
+    url('@{icomoon-font-path}/yw.ttf?ihsnxx') format('truetype'),
+    url('@{icomoon-font-path}/yw.woff?ihsnxx') format('woff'),
+    url('@{icomoon-font-path}/yw.svg?ihsnxx#yw') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="yw-"], [class*=" yw-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'yw' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yw-water {
+  &:before {
+    content: @yw-water;
+  }
+}
+.yw-air {
+  &:before {
+    content: @yw-air;
+  }
+}
+.yw-alarm {
+  &:before {
+    content: @yw-alarm;
+  }
+}
+.yw-ashcan {
+  &:before {
+    content: @yw-ashcan;
+  }
+}
+.yw-back {
+  &:before {
+    content: @yw-back;
+  }
+}
+.yw-barbecue {
+  &:before {
+    content: @yw-barbecue;
+  }
+}
+.yw-bathroom {
+  &:before {
+    content: @yw-bathroom;
+  }
+}
+.yw-bathtowel {
+  &:before {
+    content: @yw-bathtowel;
+  }
+}
+.yw-bathtub {
+  &:before {
+    content: @yw-bathtub;
+  }
+}
+.yw-bed {
+  &:before {
+    content: @yw-bed;
+  }
+}
+.yw-cleantools {
+  &:before {
+    content: @yw-cleantools;
+  }
+}
+.yw-coldair {
+  &:before {
+    content: @yw-coldair;
+  }
+}
+.yw-cook {
+  &:before {
+    content: @yw-cook;
+  }
+}
+.yw-cs {
+  &:before {
+    content: @yw-cs;
+  }
+}
+.yw-csc {
+  &:before {
+    content: @yw-csc;
+  }
+}
+.yw-ct {
+  &:before {
+    content: @yw-ct;
+  }
+}
+.yw-delete {
+  &:before {
+    content: @yw-delete;
+  }
+}
+.yw-door {
+  &:before {
+    content: @yw-door;
+  }
+}
+.yw-down {
+  &:before {
+    content: @yw-down;
+  }
+}
+.yw-Dryingracks {
+  &:before {
+    content: @yw-Dryingracks;
+  }
+}
+.yw-Electriciron {
+  &:before {
+    content: @yw-Electriciron;
+  }
+}
+.yw-elevator {
+  &:before {
+    content: @yw-elevator;
+  }
+}
+.yw-etly {
+  &:before {
+    content: @yw-etly;
+  }
+}
+.yw-football {
+  &:before {
+    content: @yw-football;
+  }
+}
+.yw-game {
+  &:before {
+    content: @yw-game;
+  }
+}
+.yw-gas {
+  &:before {
+    content: @yw-gas;
+  }
+}
+.yw-good-pre {
+  &:before {
+    content: @yw-good-pre-path1;
+    color: rgb(113, 160, 97);
+  }
+}
+.yw-good-pre .path2 {
+  &:before {
+    content: @yw-good-pre-path2;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+.yw-good-s {
+  &:before {
+    content: @yw-good-s;
+  }
+}
+.yw-good {
+  &:before {
+    content: @yw-good;
+  }
+}
+.yw-hair-dryer {
+  &:before {
+    content: @yw-hair-dryer;
+  }
+}
+.yw-heating {
+  &:before {
+    content: @yw-heating;
+  }
+}
+.yw-home-bed {
+  &:before {
+    content: @yw-home-bed;
+  }
+}
+.yw-home-people {
+  &:before {
+    content: @yw-home-people;
+  }
+}
+.yw-home-room {
+  &:before {
+    content: @yw-home-room;
+  }
+}
+.yw-home-toilet {
+  &:before {
+    content: @yw-home-toilet;
+  }
+}
+.yw-hotkettle {
+  &:before {
+    content: @yw-hotkettle;
+  }
+}
+.yw-humidifier {
+  &:before {
+    content: @yw-humidifier;
+  }
+}
+.yw-icebox {
+  &:before {
+    content: @yw-icebox;
+  }
+}
+.yw-kitchen {
+  &:before {
+    content: @yw-kitchen;
+  }
+}
+.yw-less {
+  &:before {
+    content: @yw-less;
+  }
+}
+.yw-livingroom {
+  &:before {
+    content: @yw-livingroom;
+  }
+}
+.yw-lock {
+  &:before {
+    content: @yw-lock;
+  }
+}
+.yw-mahjong {
+  &:before {
+    content: @yw-mahjong;
+  }
+}
+.yw-mftc {
+  &:before {
+    content: @yw-mftc;
+  }
+}
+.yw-Microwave {
+  &:before {
+    content: @yw-Microwave;
+  }
+}
+.yw-movie {
+  &:before {
+    content: @yw-movie;
+  }
+}
+.yw-my-cards {
+  &:before {
+    content: @yw-my-cards;
+  }
+}
+.yw-my-comment {
+  &:before {
+    content: @yw-my-comment;
+  }
+}
+.yw-my-dzf {
+  &:before {
+    content: @yw-my-dzf;
+  }
+}
+.yw-my-guanjia {
+  &:before {
+    content: @yw-my-guanjia;
+  }
+}
+.yw-my-integral {
+  &:before {
+    content: @yw-my-integral;
+  }
+}
+.yw-my-order {
+  &:before {
+    content: @yw-my-order;
+  }
+}
+.yw-my-Refunds {
+  &:before {
+    content: @yw-my-Refunds;
+  }
+}
+.yw-my-setup {
+  &:before {
+    content: @yw-my-setup;
+  }
+}
+.yw-my-tycard {
+  &:before {
+    content: @yw-my-tycard;
+  }
+}
+.yw-nav-map {
+  &:before {
+    content: @yw-nav-map;
+  }
+}
+.yw-nav-more {
+  &:before {
+    content: @yw-nav-more;
+  }
+}
+.yw-nav-notice {
+  &:before {
+    content: @yw-nav-notice;
+  }
+}
+.yw-nav-search {
+  &:before {
+    content: @yw-nav-search;
+  }
+}
+.yw-nav-time {
+  &:before {
+    content: @yw-nav-time;
+  }
+}
+.yw-no {
+  &:before {
+    content: @yw-no;
+  }
+}
+.yw-paper {
+  &:before {
+    content: @yw-paper;
+  }
+}
+.yw-park {
+  &:before {
+    content: @yw-park;
+  }
+}
+.yw-people {
+  &:before {
+    content: @yw-people;
+  }
+}
+.yw-plus {
+  &:before {
+    content: @yw-plus;
+  }
+}
+.yw-projection {
+  &:before {
+    content: @yw-projection;
+  }
+}
+.yw-putout {
+  &:before {
+    content: @yw-putout;
+  }
+}
+.yw-redpoint .path1 {
+  &:before {
+    content: @yw-redpoint-path1;
+    color: rgb(46, 74, 90);
+  }
+}
+.yw-redpoint .path2 {
+  &:before {
+    content: @yw-redpoint-path2;
+    margin-left: -1em;
+    color: rgb(17, 40, 55);
+  }
+}
+.yw-redpoint .path3 {
+  &:before {
+    content: @yw-redpoint-path3;
+    margin-left: -1em;
+    color: rgb(192, 52, 43);
+  }
+}
+.yw-redpoint .path4 {
+  &:before {
+    content: @yw-redpoint-path4;
+    margin-left: -1em;
+    color: rgb(221, 81, 73);
+  }
+}
+.yw-redpoint .path5 {
+  &:before {
+    content: @yw-redpoint-path5;
+    margin-left: -1em;
+    color: rgb(240, 111, 105);
+  }
+}
+.yw-ricecooker {
+  &:before {
+    content: @yw-ricecooker;
+  }
+}
+.yw-right {
+  &:before {
+    content: @yw-right;
+  }
+}
+.yw-room {
+  &:before {
+    content: @yw-room;
+  }
+}
+.yw-seasoning {
+  &:before {
+    content: @yw-seasoning;
+  }
+}
+.yw-select-pre {
+  &:before {
+    content: @yw-select-pre;
+  }
+}
+.yw-select {
+  &:before {
+    content: @yw-select;
+  }
+}
+.yw-sesurity {
+  &:before {
+    content: @yw-sesurity;
+  }
+}
+.yw-shampoo {
+  &:before {
+    content: @yw-shampoo;
+  }
+}
+.yw-share {
+  &:before {
+    content: @yw-share;
+  }
+}
+.yw-slipper {
+  &:before {
+    content: @yw-slipper;
+  }
+}
+.yw-soap {
+  &:before {
+    content: @yw-soap;
+  }
+}
+.yw-spa {
+  &:before {
+    content: @yw-spa;
+  }
+}
+.yw-star_ban {
+  &:before {
+    content: @yw-star_ban;
+  }
+}
+.yw-star24-half {
+  &:before {
+    content: @yw-star24-half;
+  }
+}
+.yw-star24-pre {
+  &:before {
+    content: @yw-star24-pre;
+  }
+}
+.yw-star24 {
+  &:before {
+    content: @yw-star24;
+  }
+}
+.yw-star42-pre {
+  &:before {
+    content: @yw-star42-pre;
+  }
+}
+.yw-star42 {
+  &:before {
+    content: @yw-star42;
+  }
+}
+.yw-study {
+  &:before {
+    content: @yw-study;
+  }
+}
+.yw-success {
+  &:before {
+    content: @yw-success;
+  }
+}
+.yw-sun {
+  &:before {
+    content: @yw-sun;
+  }
+}
+.yw-swim {
+  &:before {
+    content: @yw-swim;
+  }
+}
+.yw-tab-activity {
+  &:before {
+    content: @yw-tab-activity;
+  }
+}
+.yw-tab-home {
+  &:before {
+    content: @yw-tab-home;
+  }
+}
+.yw-tab-my {
+  &:before {
+    content: @yw-tab-my;
+  }
+}
+.yw-tab-rent {
+  &:before {
+    content: @yw-tab-rent;
+  }
+}
+.yw-tableware {
+  &:before {
+    content: @yw-tableware;
+  }
+}
+.yw-tkj {
+  &:before {
+    content: @yw-tkj;
+  }
+}
+.yw-toilet {
+  &:before {
+    content: @yw-toilet;
+  }
+}
+.yw-tool {
+  &:before {
+    content: @yw-tool;
+  }
+}
+.yw-toothbrush {
+  &:before {
+    content: @yw-toothbrush;
+  }
+}
+.yw-towel {
+  &:before {
+    content: @yw-towel;
+  }
+}
+.yw-tv {
+  &:before {
+    content: @yw-tv;
+  }
+}
+.yw-up {
+  &:before {
+    content: @yw-up;
+  }
+}
+.yw-washer {
+  &:before {
+    content: @yw-washer;
+  }
+}
+.yw-washing {
+  &:before {
+    content: @yw-washing;
+  }
+}
+.yw-washtool {
+  &:before {
+    content: @yw-washtool;
+  }
+}
+.yw-wifi {
+  &:before {
+    content: @yw-wifi;
+  }
+}
+.yw-window {
+  &:before {
+    content: @yw-window;
+  }
+}
+.yw-wired {
+  &:before {
+    content: @yw-wired;
+  }
+}
+.yw-yd {
+  &:before {
+    content: @yw-yd;
+  }
+}
+.yw-yes {
+  &:before {
+    content: @yw-yes;
+  }
+}
+

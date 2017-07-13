@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <script src="//cdn.jsdelivr.net/eruda/1.2.2/eruda.min.js"></script>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -12,6 +13,17 @@
   	<!-- QQ强制竖屏 -->
   	<meta name="x5-orientation" content="portrait">
     <title>商品</title>
+    <!--初始化样式-->
+    <style>
+        html {overflow-y:scroll;width:100vw;height:100vh;} 
+        body {margin:0; padding:29px00; font:12px"\5B8B\4F53",sans-serif;background:#ffffff;} 
+        div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;} 
+        table,td,tr,th{font-size:12px;} 
+        li{list-style-type:none;} 
+        img{vertical-align:top;border:0;} 
+        ol,ul {list-style:none;}
+        address,cite,code,em,th {font-weight:normal; font-style:normal;} 
+    </style>
   </head>
   <body>
   <script type='text/javascript'>
@@ -30,5 +42,7 @@
 </script>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src='http://api.map.baidu.com/api?v=2.0&ak=brUBLWGNneP8Pf0uQgiVODKViEtNG67h&callback=init'></script>
   </body>
 </html>
