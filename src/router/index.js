@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import Login from '@/pages/login/login'
 import Index from '@/pages/index/index'
+import Test from '@/pages/test/test'
 
 Vue.use(Router)
 
@@ -19,8 +20,12 @@ export default new Router({
       component: Login
     },
     {
-      path: '/Index', // 登录
+      path: '/Index', // 首页
       component: Index
+    },
+    {
+      path: '/test', // 测试
+      component: Test
     }
   ]
 })
