@@ -26,6 +26,7 @@ const originalConfig = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       'img': path.resolve(__dirname, '../src/assets'),
+      'components': path.resolve(__dirname, '../src/components'),
       '@': resolve('src')
     }
   },

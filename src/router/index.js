@@ -12,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Login',
-      component: Login
+      name: 'Index',
+      component: Index
     },
     {
       path: '/login', // 登录
