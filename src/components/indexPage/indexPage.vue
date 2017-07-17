@@ -3,13 +3,13 @@
 		<swiper :list="demoImg" auto class="swiper-style" height="10rem" dots-position="center">
         </swiper>
         <grid>
-          <grid-item label="幸福定制">
+          <grid-item @on-item-click="happinesCustomization" label="幸福定制">
             <img slot="icon" src="~img/Index/u78.png">
           </grid-item>
-          <grid-item label="幸福特推">
+          <grid-item @on-item-click="happinesSupply" label="幸福特推">
             <img slot="icon" src="~img/Index/u83.png">
           </grid-item>
-          <grid-item label="幸福优选">
+          <grid-item @on-item-click="happinesSelection" label="幸福优选">
             <img slot="icon" src="~img/Index/u88.png">
           </grid-item>
         </grid>
@@ -51,7 +51,15 @@
 	    }
 	  },
 	  methods: {
-	      
+	      happinesCustomization () {
+          console.log("this is happinesCustomization ... ") ;
+        },
+        happinesSupply () {
+          console.log("this is happinesSupply ...") ;
+        },
+        happinesSelection () {
+          console.log("this is happinesSelection ...") ;
+        }
 	  },
 	  components: {
 	  	Tab, TabItem, Swiper, SwiperItem, XInput, Group, Toast, XHeader, Search, Countdown,Toast, Grid, GridItem,XTable

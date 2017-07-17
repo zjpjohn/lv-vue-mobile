@@ -8,72 +8,16 @@
           </div>
         </div>
         <ul class="classify-ui">
-          <li>服装配饰</li>
-          <li>生鲜果蔬</li>
-          <li>粮油副食</li>
-          <li>食品酒饮</li>
-          <li>到家服务</li>
-          <li>个护化妆</li>
-          <li>特色旅游</li>
+          <li v-for="list in lists">{{list}}</li>
         </ul>
         <div class="classify-container">
           <img class="recommend-img" src="~img/Index/u271.jpg" alt="">
           <x-table :cell-bordered="false" class="classify-table">
             <tbody>
-              <tr>
-                <td>
+              <tr v-for="i in 4">
+                <td v-for="j in 3">
                   <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
-                </td>
-                <td>
-                  <div><img src ="~img/Index/u273.png"></div>
-                  子分类
+                  {{itemName}}
                 </td>
               </tr>
             </tbody>
@@ -89,7 +33,10 @@
 	  data () {
 	    return {
 	      msg: '',
-          detailshow: false
+        lists:['服装配饰','生鲜果蔬','粮油副食','食品酒饮','到家服务','个护化妆',
+        '特色旅游'],
+        itemName: '子分类' ,
+        detailshow: false
 	    }
 	  },
 	  methods: {
@@ -104,7 +51,7 @@
     .topdetail{
         height: 1.3rem;
         width:100%;
-        position: fixed;
+        position: absolute;
         top: 5.5rem;
         z-index: 2;
     }
