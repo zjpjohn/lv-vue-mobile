@@ -59,6 +59,9 @@
 	}
 </script>
 <style scoped>
+  .weui-grid:before{
+    border-right:0;
+  }
 	.swiper-style{
 	    width:100%;
 	    margin:0 auto;

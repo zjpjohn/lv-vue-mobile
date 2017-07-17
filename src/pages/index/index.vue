@@ -1,6 +1,6 @@
 <template>
   <div class="index-container">
-      <h1 class="index-title">{{text}}</h1>
+      <h1 class="index-head">{{text}}</h1>
       <tab class="index-tab"  :line-width=2 active-color='#993333' v-model="index">
         <tab-item class="vux-center" :selected="indexTab === item" v-for="(item, index) in tabList" @click="indexTab = item" :key="index">{{item}}</tab-item>
       </tab>  
@@ -13,6 +13,7 @@
       <div v-if="2 === index">
         <classifyPage></classifyPage>
       </div>
+      <bottom></bottom>
   </div>
 </template>
 <script>
@@ -20,13 +21,14 @@
   import indexPage from 'components/indexPage/indexPage'
   import searchSelection from 'components/searchSelection/searchSelection'
   import classifyPage from 'components/classifyPage/classifyPage'
+  import bottom from '../footer/footer'
   import u55 from 'img/Index/u55.png' ;
   import u57 from 'img/Index/u57.jpg' ;
   import u59 from 'img/Index/u59.jpg' ;
   const tabList = () => ['首页', '寻物记', '分类']
   export default {
     components: {
-      Tab, TabItem, Swiper, SwiperItem, XInput, Group, Toast, XHeader, Search, Countdown,Toast, Grid, GridItem,XTable,indexPage,searchSelection,classifyPage
+      Tab, TabItem, Swiper, SwiperItem, XInput, Group, Toast, XHeader, Search, Countdown,Toast, Grid, GridItem,XTable,indexPage,searchSelection,classifyPage,bottom
     },
 
     data() {
@@ -56,7 +58,7 @@
   @import '~vux/src/styles/1px.less';
   @import '~vux/src/styles/center.less';
   * { touch-action: none; }
-  .index-title{
+  .index-head{
     position:absolute;
     top:0;
     width:100vw;
