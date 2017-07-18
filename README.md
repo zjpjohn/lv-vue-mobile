@@ -13,7 +13,7 @@
 * cnpm i mint-ui -S //安装eleme的UI库
 ```
 
-## 服务热加载localhost:8888
+## 服务热加载localhost:9999
 ``` bash
 * npm run dev
 ```
