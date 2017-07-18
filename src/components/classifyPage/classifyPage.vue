@@ -4,7 +4,7 @@
         <div v-show=!detailshow class = "topdetail">
           <div @click="" class="detailsearchtext">
             <img src ="~img/Index/u268.png" class = "search-img">
-            <span style="padding-left: 1rem;font-size: 14px;">秋田小町</span>
+            <span>{{searchName}}</span>
           </div>
         </div>
         <ul class="classify-ui">
@@ -35,6 +35,7 @@
 	      msg: '',
         lists:['服装配饰','生鲜果蔬','粮油副食','食品酒饮','到家服务','个护化妆',
         '特色旅游'],
+        searchName:'秋田小町' ,
         itemName: '子分类' ,
         detailshow: false
 	    }
@@ -67,6 +68,10 @@
         line-height: 2rem;
         font-size: 20px;
         overflow: hidden;
+    }
+    .detailsearchtext > span{
+        padding-left: 1rem;
+        font-size: 14px;
     }
     .search-img{
         display: block;
